@@ -1,13 +1,16 @@
 /*Lato font from Google*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap');
 
+/*------------------------------------------------*/
+/*BASIC SETUP*/
+/*------------------------------------------------*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     color: #555555;
     font-family: 'Lato', 'Arial', 'sans-serif';
     font-weight: 300;
@@ -15,27 +18,17 @@ html{
     text-rendering: optimizeLegibility;
 }
 
-.row{
+/*------------------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*------------------------------------------------*/
+
+.row {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/images/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-.hero-text-box{
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-h1{
+/*HEADINGS*/
+h1 {
     margin-top: 0;
     margin-bottom: 20px;
     color: #ffffff;
@@ -46,6 +39,7 @@ h1{
     word-spacing: 4px;
 }
 
+/*BUTTONS*/
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -81,8 +75,58 @@ h1{
 }
 
 .btn-ghost:hover,
-.btn-ghost:active{
+.btn-ghost:active {
     border: 1px solid #cf6d17;
     color: #fff;
 }
 
+/*------------------------------------------------*/
+/*HEADER*/
+/*------------------------------------------------*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
