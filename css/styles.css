@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap');
 
 /*------------------------------------------------*/
-/*------------------BASIC SETUP-------------------*/
+/*                  BASIC SETUP                   */
 /*------------------------------------------------*/
 *{
     margin: 0;
@@ -18,8 +18,17 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1}
+.clearfix:after {
+    content:".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /*------------------------------------------------*/
-/*--------------REUSABLE COMPONENTS---------------*/
+/*              REUSABLE COMPONENTS               */
 /*------------------------------------------------*/
 
 .row {
@@ -89,11 +98,38 @@ h2:after {
 }
 
 /*---------------------ICONS-----------------------*/
-ion-icon {
+.section-features ion-icon {
     font-size: 300%;
     display: block;
     color: #e67e22;
     margin-bottom: 10px;
+}
+
+.city-feature ion-icon {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    line-height: 120%;
+    vertical-align: center;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+/*--------------------LINKS------------------------*/
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color: 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555555;
+    border-bottom: 1px solid transparent;
 }
 
 /*-------------------BUTTONS----------------------*/
@@ -138,7 +174,7 @@ ion-icon {
 }
 
 /*------------------------------------------------*/
-/*---------------------HEADER---------------------*/
+/*                     HEADER                     */
 /*------------------------------------------------*/
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/images/hero.jpg);
@@ -189,14 +225,14 @@ header {
 }
 
 /*------------------------------------------------*/
-/*-------------------FEATURES---------------------*/
+/*                  FEATURES                       */
 /*------------------------------------------------*/
 .section-features .long-copy {
     margin-bottom: 30px;
 }
 
 /*------------------------------------------------*/
-/*--------------------MEALS-----------------------*/
+/*                   MEALS                        */
 /*------------------------------------------------*/
 .section-meals {
     padding: 0;
@@ -231,4 +267,72 @@ header {
 .meal-photo img:hover {
     opacity: 1;
     transform: scale(1.03);
+}
+
+/*------------------------------------------------*/
+/*               HOW IT WORKS                     */
+/*------------------------------------------------*/
+.section-steps{
+    background-color: #f4f4f4;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 10px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-steps {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.works-steps:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-steps div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app:link,
+btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/*------------------------------------------------*/
+/*                     CITIES                     */
+/*------------------------------------------------*/
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
 }
