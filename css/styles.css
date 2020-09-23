@@ -23,6 +23,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .clearfix {zoom: 1;}
 .clearfix:after {
     content: '.';
