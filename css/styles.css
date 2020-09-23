@@ -130,7 +130,6 @@ a:visited {
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 1px solid #e67e22;
-    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -149,7 +148,6 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -222,6 +220,7 @@ header {
     margin: 5px 0;
 }
 
+/* Main navi */
 .main-nav {
     float: right;
     list-style: none;
@@ -260,7 +259,9 @@ header {
     box-shadow: 0 2px 2px #efefef;
 }
 
-.main-nav { margin-top: 18px; }
+.main-nav { 
+    margin-top: 18px; 
+}
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
@@ -268,8 +269,13 @@ header {
     color: #555;
 }
 
-.sticky .logo { display: none; }
-.sticky .logo-black { display: block; }
+.sticky .logo { 
+    display: none; 
+}
+
+.sticky .logo-black { 
+    display: block; 
+}
 
 /*------------------------------------------------*/
 /*                  FEATURES                      */
@@ -314,8 +320,6 @@ header {
 
 .meal-photo img:hover {
     opacity: 1;
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
 
@@ -402,7 +406,6 @@ header {
 /*------------------------------------------------*/
 
 .section-testimonials {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
     background-size: cover;
     color: #fff;
@@ -566,7 +569,6 @@ footer {
     text-decoration: none;
     border: 0;
     color: #888;
-    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -584,7 +586,6 @@ footer {
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
-    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
